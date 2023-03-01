@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    Name &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="NameB" onfocus="FocusBox(this)" onblur="BlurBox(this)" onchange="removeInstName()">
+
+    <br><br>
+    Surname
+    <input type="text" id="SurB" onfocus="FocusBox(this)" onblur="BlurBox(this)" onchange="removeInstSur()">
+    <br><br>
+
+    Date of Birth
+    <br><br>
+    <input type="date" id="Date" onchange="removeInstBD()">
+
+    <br><br>
+    Select your langauge
+    <select id="menu" onchange="removeSelectL()">
+        <option>-- Select --</option>
+        <option value="C">C</option>
+        <option value="Java">Java</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+    </select>
+
+    <br><br>
+    <button id="Some" onclick="Submit()"> Submit </button>
+
+    <br><br>
+    <h1 id="print"></h1>
+    <h1 id="InstName" class="red-text"> Insert Name </h1>
+    <h1 id="InstSur" class="red-text"> Insert Surname </h1>
+    <h1 id="InstBD" class="red-text"> Insert Birth date </h1>
+    <h1 id="SelectL" class="red-text"> Select langauge </h1>
+
+    <script src="function.js"></script>
+</body>
+</html>
